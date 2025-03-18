@@ -1,4 +1,4 @@
-package grader;
+package FFO.grader;
 
 /**
  * @Author tortoise

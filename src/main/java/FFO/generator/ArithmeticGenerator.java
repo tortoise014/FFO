@@ -1,4 +1,4 @@
-package generator;
+package FFO.generator;
 
 /**
  * @Author tortoise
