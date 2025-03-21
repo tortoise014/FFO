@@ -40,10 +40,10 @@ class OperatorExpression extends FFO.generator.Expression {
         String lStr = left.toCanonicalString(), rStr = right.toCanonicalString();
         if (operator == '+' || operator == '×') {
             if (lStr.compareTo(rStr) > 0) {
-                return "(" + rStr + " " + operator + " " + lStr + ")";
+                return "(" + rStr +  operator +  lStr + ")";
             }
         }
-        return "(" + lStr + " " + operator + " " + rStr + ")";
+        return "(" + lStr +  operator +  rStr + ")";
     }
     @Override public String toString() {
         String lStr = left.toString(), rStr = right.toString();
@@ -53,6 +53,6 @@ class OperatorExpression extends FFO.generator.Expression {
         if (right instanceof OperatorExpression) {
             rStr = "(" + rStr + ")";
         }
-        return lStr + " " + operator + " " + rStr;
+        return lStr +  operator +  rStr;
     }
 }
